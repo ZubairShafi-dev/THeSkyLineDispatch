@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${bebasNeue.variable} ${barlow.variable} font-barlow bg-[#0a0a0a] text-white antialiased`}
+        className={`${bebasNeue.variable} ${barlow.variable} font-barlow bg-slate-50 text-slate-900 antialiased`}
       >
         {children}
       </body>

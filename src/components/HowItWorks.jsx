@@ -32,27 +32,27 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="process" className="py-24 bg-[#0a0a0a] border-b border-[#262626] relative overflow-hidden">
+    <section id="process" className="py-24 bg-white border-b border-slate-200/80 relative overflow-hidden">
       {/* Decorative side lines */}
-      <div className="absolute top-0 left-0 w-32 h-full border-r border-[#262626] opacity-30 pointer-events-none" />
-      <div className="absolute top-0 right-0 w-32 h-full border-l border-[#262626] opacity-30 pointer-events-none" />
+      <div className="absolute top-0 left-0 w-32 h-full border-r border-slate-100 opacity-50 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-32 h-full border-l border-slate-100 opacity-50 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-20">
           <ScrollReveal delay={0.1}>
-            <span className="text-gold font-bold uppercase tracking-widest text-sm">
+            <span className="text-amber-600 font-bold uppercase tracking-widest text-sm">
               Our Roadmap
             </span>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
-            <h2 className="font-bebas text-5xl sm:text-6xl tracking-wider mt-2 mb-4 text-white">
-              HOW IT <span className="text-gold">WORKS</span>
+            <h2 className="font-bebas text-5xl sm:text-6xl tracking-wider mt-2 mb-4 text-slate-900">
+              HOW IT <span className="text-amber-600">WORKS</span>
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.3}>
-            <p className="text-gray-400 text-lg">
+            <p className="text-slate-600 text-lg font-medium">
               Four simple steps to stream-line your operation. We focus on booking the freight and managing paperwork, keeping your wheels rolling smoothly.
             </p>
           </ScrollReveal>
@@ -61,7 +61,7 @@ export default function HowItWorks() {
         {/* Steps Timeline Grid */}
         <div className="relative">
           {/* Horizontal connecting line (hidden on mobile, visible on desktop) */}
-          <div className="hidden lg:block absolute top-[44px] left-12 right-12 h-[2px] bg-neutral-800 z-0" />
+          <div className="hidden lg:block absolute top-[44px] left-12 right-12 h-[2px] bg-slate-200 z-0" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 relative z-10">
             {steps.map((step, idx) => {
@@ -74,20 +74,20 @@ export default function HowItWorks() {
                   className="flex flex-col items-center lg:items-start text-center lg:text-left group"
                 >
                   {/* Step Circle & Icon */}
-                  <div className="w-20 h-20 bg-neutral-900 border-2 border-neutral-800 rounded-full flex items-center justify-center text-gold mb-6 relative group-hover:border-gold transition-colors duration-300">
-                    <span className="absolute -top-2 -right-2 bg-gold text-black font-bebas text-sm font-bold w-6 h-6 rounded-full flex items-center justify-center border-2 border-black">
+                  <div className="w-20 h-20 bg-slate-50 border-2 border-slate-200 rounded-full flex items-center justify-center text-amber-600 mb-6 relative group-hover:border-amber-500 transition-colors duration-300 shadow-sm">
+                    <span className="absolute -top-2 -right-2 bg-gold text-black font-bebas text-sm font-bold w-6 h-6 rounded-full flex items-center justify-center border-2 border-white shadow">
                       {step.num}
                     </span>
                     <Icon className="w-8 h-8" />
                   </div>
 
                   {/* Step Title */}
-                  <h3 className="font-bebas text-2xl tracking-wider text-white mb-3 group-hover:text-gold transition-colors duration-200">
+                  <h3 className="font-bebas text-2xl tracking-wider text-slate-800 mb-3 group-hover:text-amber-600 transition-colors duration-200">
                     {step.title}
                   </h3>
 
                   {/* Step Description */}
-                  <p className="text-gray-400 text-sm leading-relaxed max-w-xs font-medium">
+                  <p className="text-slate-600 text-sm leading-relaxed max-w-xs font-medium">
                     {step.desc}
                   </p>
                 </ScrollReveal>

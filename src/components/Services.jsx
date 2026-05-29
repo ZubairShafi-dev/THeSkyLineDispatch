@@ -38,25 +38,25 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-[#0a0a0a] border-b border-[#262626] relative">
+    <section id="services" className="py-24 bg-white border-b border-slate-200/80 relative">
       {/* Decorative background grid effect */}
-      <div className="absolute inset-0 bg-[radial-gradient(#222_1px,transparent_1px)] [background-size:20px_20px] opacity-10 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:20px_20px] opacity-30 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <ScrollReveal delay={0.1}>
-            <span className="text-gold font-bold uppercase tracking-widest text-sm">
+            <span className="text-amber-600 font-bold uppercase tracking-widest text-sm">
               Our Capabilities
             </span>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
-            <h2 className="font-bebas text-5xl sm:text-6xl tracking-wider mt-2 mb-4 text-white">
-              PREMIUM DISPATCH <span className="text-gold">SERVICES</span>
+            <h2 className="font-bebas text-5xl sm:text-6xl tracking-wider mt-2 mb-4 text-slate-900">
+              PREMIUM DISPATCH <span className="text-amber-600">SERVICES</span>
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.3}>
-            <p className="text-gray-400 text-lg">
+            <p className="text-slate-600 text-lg font-medium">
               Maximize your earnings and keep your wheels rolling. We handle the heavy lifting behind the scenes so you can focus strictly on the road.
             </p>
           </ScrollReveal>
@@ -71,32 +71,32 @@ export default function Services() {
                 key={index}
                 delay={0.1 * index}
                 y={30}
-                className="group relative bg-[#121212] border border-neutral-800/80 p-8 hover:border-gold/50 transition-all duration-300 transform hover:translate-y-[-4px] box-glow-hover flex flex-col justify-between"
+                className="group relative bg-slate-50 border border-slate-200/80 p-8 hover:border-amber-500/50 hover:bg-white transition-all duration-300 transform hover:translate-y-[-4px] box-glow-hover flex flex-col justify-between rounded-2xl shadow-sm hover:shadow-md"
               >
                 {/* Accent Corner Lines */}
-                <div className="absolute top-0 right-0 w-4 h-[1px] bg-neutral-800 group-hover:bg-gold transition-colors duration-300" />
-                <div className="absolute top-0 right-0 w-[1px] h-4 bg-neutral-800 group-hover:bg-gold transition-colors duration-300" />
+                <div className="absolute top-0 right-0 w-4 h-[2px] bg-transparent group-hover:bg-amber-500 transition-colors duration-300 rounded-tr-2xl" />
+                <div className="absolute top-0 right-0 w-[2px] h-4 bg-transparent group-hover:bg-amber-500 transition-colors duration-300 rounded-tr-2xl" />
 
                 <div>
                   {/* Icon Container */}
-                  <div className="w-14 h-14 bg-neutral-900 border border-neutral-800 flex items-center justify-center text-gold mb-6 relative overflow-hidden group-hover:border-gold/30 transition-colors duration-300">
-                    <div className="absolute inset-0 bg-gold/5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+                  <div className="w-14 h-14 bg-white border border-slate-250/70 flex items-center justify-center text-amber-600 mb-6 relative overflow-hidden group-hover:border-amber-500/30 transition-colors duration-300 rounded-xl shadow-sm">
+                    <div className="absolute inset-0 bg-amber-500/5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
                     <IconComponent className="w-6 h-6 z-10" />
                   </div>
 
                   {/* Title */}
-                  <h3 className="font-bebas text-2xl tracking-wider text-white mb-3 group-hover:text-gold transition-colors duration-200">
+                  <h3 className="font-bebas text-2xl tracking-wider text-slate-800 mb-3 group-hover:text-amber-600 transition-colors duration-200">
                     {service.title}
                   </h3>
 
                   {/* Description */}
-                  <p className="text-gray-400 text-sm leading-relaxed mb-6 font-medium">
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6 font-medium">
                     {service.description}
                   </p>
                 </div>
 
                 {/* Bottom Border Accent */}
-                <div className="w-full h-[2px] bg-neutral-800 group-hover:bg-gold transition-colors duration-300 mt-auto" />
+                <div className="w-full h-[2px] bg-slate-200 group-hover:bg-amber-500 transition-colors duration-300 mt-auto rounded-full" />
               </ScrollReveal>
             );
           })}

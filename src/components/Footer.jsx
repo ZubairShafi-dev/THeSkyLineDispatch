@@ -26,11 +26,11 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#050505] border-t border-[#262626] pt-16 pb-8 relative z-10">
+    <footer className="bg-slate-950 border-t border-slate-900 pt-16 pb-8 relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Footers Top Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-[#1f1f1f]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-slate-900">
           
           {/* Logo & Tagline */}
           <div className="lg:col-span-5 space-y-6">
@@ -39,10 +39,10 @@ export default function Footer() {
                 THE <span className="text-gold">SKYLINE</span> DISPATCH
               </span>
             </a>
-            <p className="text-gray-400 text-sm max-w-sm leading-relaxed font-medium">
+            <p className="text-slate-400 text-sm max-w-sm leading-relaxed font-medium">
               &quot;Beyond the Horizon: Where Quality Loads Meet Clarity.&quot;
             </p>
-            <p className="text-gray-500 text-xs leading-relaxed max-w-sm">
+            <p className="text-slate-500 text-xs leading-relaxed max-w-sm">
               We streamline trucking operations for owner-operators and carrier fleets. Book high-paying loads, skip the paperwork, and get real-time dispatch support.
             </p>
             
@@ -89,7 +89,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 bg-neutral-900 border border-neutral-850 text-gray-400 hover:text-gold hover:border-gold/50 flex items-center justify-center transition-all duration-300"
+                  className="w-10 h-10 bg-slate-905 border border-slate-900 text-slate-400 hover:text-gold hover:border-gold/50 flex items-center justify-center transition-all duration-300 rounded-xl"
                 >
                   {social.svg}
                 </a>
@@ -102,7 +102,7 @@ export default function Footer() {
             <h4 className="font-bebas text-xl tracking-wider text-white">
               DISPATCH SERVICES
             </h4>
-            <ul className="space-y-2 text-sm text-gray-400">
+            <ul className="space-y-2 text-sm text-slate-400 font-medium">
               {[
                 "Full Truck Dispatch",
                 "Paperwork & BOL",
@@ -129,7 +129,7 @@ export default function Footer() {
             <h4 className="font-bebas text-xl tracking-wider text-white">
               COMPANY
             </h4>
-            <ul className="space-y-2 text-sm text-gray-400">
+            <ul className="space-y-2 text-sm text-slate-400 font-medium">
               {[
                 { name: "Why Partner Us", id: "why-us" },
                 { name: "Our Process", id: "process" },
@@ -154,11 +154,11 @@ export default function Footer() {
             <h4 className="font-bebas text-xl tracking-wider text-white">
               LEGAL
             </h4>
-            <ul className="space-y-2 text-sm text-gray-400">
+            <ul className="space-y-2 text-sm text-slate-400 font-medium">
               {["Privacy Policy", "Terms of Service", "Carrier Agreement", "Broker Agreement"].map(
                 (link, idx) => (
                   <li key={idx}>
-                    <span className="cursor-not-allowed hover:text-gray-500 transition-colors duration-200">
+                    <span className="cursor-not-allowed hover:text-slate-500 transition-colors duration-200">
                       {link}
                     </span>
                   </li>
@@ -170,7 +170,7 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom Row */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 font-medium">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 font-medium">
           <p>
             © {currentYear} The SkyLine Dispatch. All rights reserved.
           </p>
@@ -178,7 +178,7 @@ export default function Footer() {
             <span>skylinedispatch.org</span>
             <button
               onClick={(e) => handleScrollTo(e, "")}
-              className="bg-neutral-900 border border-neutral-800 text-gray-400 hover:text-gold p-2 hover:border-gold/50 transition-all duration-300"
+              className="bg-slate-900 border border-slate-800 text-slate-400 hover:text-gold p-2 hover:border-gold/50 transition-all duration-300 rounded-xl"
               aria-label="Scroll to top"
             >
               <ArrowUp className="w-4 h-4" />

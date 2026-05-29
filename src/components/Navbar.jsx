@@ -47,7 +47,7 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-[#0a0a0a]/95 backdrop-blur-md py-4 border-b border-[#262626] shadow-lg"
+            ? "bg-white/90 backdrop-blur-md py-4 border-b border-slate-200/85 shadow-md"
             : "bg-transparent py-6 border-b border-transparent"
         }`}
       >
@@ -58,8 +58,8 @@ export default function Navbar() {
             onClick={(e) => handleScrollTo(e, "")}
             className="flex items-center space-x-2 group"
           >
-            <span className="font-bebas text-2xl sm:text-3xl tracking-wider text-white group-hover:text-gold transition-colors duration-200">
-              THE <span className="text-gold">SKYLINE</span> DISPATCH
+            <span className="font-bebas text-2xl sm:text-3xl tracking-wider text-slate-900 group-hover:text-amber-600 transition-colors duration-200">
+              THE <span className="text-amber-600">SKYLINE</span> DISPATCH
             </span>
           </a>
 
@@ -70,7 +70,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleScrollTo(e, link.href.substring(1))}
-                className="text-gray-300 hover:text-gold uppercase tracking-wider font-semibold text-sm transition-colors duration-200"
+                className="text-slate-700 hover:text-amber-600 uppercase tracking-wider font-semibold text-sm transition-colors duration-200"
               >
                 {link.name}
               </a>
@@ -81,9 +81,9 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-4">
             <a
               href="tel:2523277145"
-              className="flex items-center text-gray-300 hover:text-gold font-semibold text-sm tracking-wider uppercase transition-colors"
+              className="flex items-center text-slate-700 hover:text-amber-600 font-semibold text-sm tracking-wider uppercase transition-colors"
             >
-              <Phone className="w-4 h-4 mr-2 text-gold" />
+              <Phone className="w-4 h-4 mr-2 text-amber-600" />
               (252) 327-7145
             </a>
             <a
@@ -99,10 +99,10 @@ export default function Navbar() {
           <div className="flex md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-gold focus:outline-none p-2"
+              className="text-slate-800 hover:text-amber-600 focus:outline-none p-2"
               aria-label="Toggle menu"
             >
-              {isOpen ? <X className="h-6 h-6" /> : <Menu className="h-6 h-6" />}
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="fixed top-0 left-0 w-full h-screen bg-[#0a0a0a] z-40 flex flex-col justify-center px-6 pt-20"
+            className="fixed top-0 left-0 w-full h-screen bg-white z-40 flex flex-col justify-center px-6 pt-20"
           >
             <nav className="flex flex-col space-y-6 text-center">
               {navLinks.map((link) => (
@@ -124,18 +124,18 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={(e) => handleScrollTo(e, link.href.substring(1))}
-                  className="font-bebas text-4xl tracking-wider text-gray-200 hover:text-gold transition-colors duration-200"
+                  className="font-bebas text-4xl tracking-wider text-slate-800 hover:text-amber-600 transition-colors duration-200"
                 >
                   {link.name}
                 </a>
               ))}
-              <hr className="border-[#262626] my-2" />
+              <hr className="border-slate-100 my-2" />
               <div className="flex flex-col items-center space-y-4">
                 <a
                   href="tel:2523277145"
-                  className="flex items-center text-gray-300 hover:text-gold font-semibold text-lg tracking-wider uppercase transition-colors"
+                  className="flex items-center text-slate-700 hover:text-amber-600 font-semibold text-lg tracking-wider uppercase transition-colors"
                 >
-                  <Phone className="w-5 h-5 mr-2 text-gold" />
+                  <Phone className="w-5 h-5 mr-2 text-amber-600" />
                   (252) 327-7145
                 </a>
                 <a
